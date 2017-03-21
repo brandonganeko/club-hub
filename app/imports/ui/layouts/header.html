@@ -1,0 +1,12 @@
+<template name="Header">
+  <div style="margin: 0px; border-radius: 0px" class="ui borderless inverted menu">
+    <div class="ui container">
+      <a class="item" href="{{pathFor 'Home_Page'}}"><h1>Club Hub</h1></a>
+      <a class="{{ isActiveRoute 'Register_Page'}} item" href="{{ pathFor 'Register_Page' }}">Register </a>
+      <a class="{{ isActiveRoute 'Login_Page'}} item" href="{{ pathFor 'Login_Page' }}">Login </a>
+      <a class="{{ isActiveRoute 'Profile_Page'}} item" href="{{ pathFor 'Profile_Page' }}">Profile </a>
+      <a class="{{ isActiveRoute 'Create_Club_Page'}} item" href="{{ pathFor 'Create_Club_Page' }}">Create Club </a>
+      <a class="{{ isActiveRoute 'Clubs_Page'}} item" href="{{ pathFor 'Clubs_Page' }}">Browse Clubs </a>
+    </div>
+  </div>
+</template>

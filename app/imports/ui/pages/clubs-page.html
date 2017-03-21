@@ -1,0 +1,39 @@
+<template name="Clubs_Page">
+  <body>
+  <div style="margin-top: 20px" class="ui container">
+    <h4 class="ui dividing header">Clubs</h4>
+
+    <div class="ui sub header">Clubs(Alphabetical)</div>
+    <div class="ui fluid multiple search selection dropdown">
+      <input name="tags" type="hidden">
+      <i class="dropdown icon"></i>
+      <div class="default text">Clubs</div>
+      <div class="menu">
+        <div class="item" data-value="artclub">Art Club</div>
+        <div class="item" data-value="biologyclub">Biology Club</div>
+        <div class="item" data-value="mathclub">Math Club</div>
+      </div>
+    </div>
+
+    <div class="ui sub header">Categories</div>
+    <div class="ui fluid multiple search selection dropdown">
+      <input name="tags" type="hidden">
+      <i class="dropdown icon"></i>
+      <div class="default text">Clubs</div>
+      <div class="menu">
+        <div class="item" data-value="artclub">Art Club</div>
+        <div class="item" data-value="biologyclub">Biology Club</div>
+        <div class="item" data-value="mathclub">Math Club</div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  $('.tag.example .ui.dropdown')
+      .dropdown({
+        allowAdditions: true
+      })
+  ;
+</script>
+</body>
+</template>
