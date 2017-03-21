@@ -1,4 +1,5 @@
 <template name="Create_Club_Page">
+  <body>
   <div style="margin-top: 20px" class="ui container">
     <h4 class="ui dividing header">Profile</h4>
 
@@ -14,6 +15,17 @@
         <input type="text" name="email" placeholder="Email">
       </div>
 
+      <div class="ui sub header">Listed By Categories</div>
+      <div class="ui fluid multiple search selection dropdown">
+        <input name="tags" type="hidden">
+        <i class="dropdown icon"></i>
+        <div class="default text">Clubs</div>
+        <div class="menu">
+          <div class="item" data-value="art">Art</div>
+          <div class="item" data-value="math">Math</div>
+          <div class="item" data-value="science">Science</div>
+        </div>
+      </div>
 
       <div class="field">
         <label>Time Schedule</label>
@@ -24,4 +36,13 @@
 
     </form>
   </div>
+  <script>
+    $('.ui.dropdown')
+        .dropdown({
+          allowAdditions: true
+        })
+    ;
+  </script>
+  </body>
 </template>
+
